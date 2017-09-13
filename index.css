@@ -1,0 +1,40 @@
+nav {
+    background-color: #4ab367;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+}
+
+nav li {
+    display: inline;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+.nav-centre {
+    position: absolute;
+    top: 28px;
+    left: 300px;
+    right: 150px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.user-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 58px;
+    height: 58px;
+}
