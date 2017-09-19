@@ -1,5 +1,5 @@
 var websocket;
-var apiKey = document.getElementById('api-key');
+var apiKey = "o.S1eIJqPUfML5uXOYEJbLHgkGUYZQVjOF";
 var submit = document.getElementById('submit');
 var messages = document.getElementById('messages');
 submit.onclick = function() {
@@ -7,7 +7,7 @@ submit.onclick = function() {
         websocket.close();
     }
     
-    websocket = new WebSocket('wss://stream.pushbullet.com/websocket/o.S1eIJqPUfML5uXOYEJbLHgkGUYZQVjOF');
+    websocket = new WebSocket('wss://stream.pushbullet.com/websocket/' + apiKey);
     websocket.onopen = function(e) {
         messages.innerHTML += "<p>WebSocket onopen</p>";
     }
