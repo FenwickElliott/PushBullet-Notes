@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
-       <nav>
+       <!-- <nav>
             <a href="/"><img src="/resources/logo@2x.png" width="280px" height="58px"/></a>
             <div class="nav-centre">
                 <li>APPS</li>
@@ -16,13 +16,19 @@
                 <li>HELP</li>
             </div>
             <a href="/"><img class="user-icon" src="/resources/generic_avitar.png"/></a>
-        </nav>
+        </nav> -->
 
+        <div>
+            API Key: <input id="api-key" type="text" style="width:300px">
+            <input id="submit" type="button" value="Submit">
+        </div>
+        <div id="messages"></div>
 
+        <script src="socket.js"></script>
 
-        <h1>PushBullet is Here on Mac!</h1>
+        <!-- <h1>PushBullet is Here on Mac!</h1>
         It is running on Electron <script>document.write(process.versions.node)</script>,
         Chrome <script>document.write(process.versions.chrome)</script>,
-        and Electron <script>document.write(process.versions.electron)</script>.
+        and Electron <script>document.write(process.versions.electron)</script>. -->
     </body>
 </html>
