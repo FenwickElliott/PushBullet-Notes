@@ -8,8 +8,6 @@ var me = fetch(url, {
 })
 .then(res => res.json())
 .then(function(json){
-    jsonfile.writeFile('./me.json', json, function (err) {
-        console.error(err)
-       })
+    jsonfile.writeFile('./me.json', json, err => console.log(err));
     return;
 });
